@@ -2,7 +2,7 @@ fetch('../abi/contractABI.json')
     .then(response => response.json())
     .then(async (contractABI) => {
         // RPC URL for Fhenix Blockchain (replace with actual URL)
-        const fhenixRpcUrl = "https://api.helium.fhenix.zone"; // Replace this with the actual Fhenix RPC URL
+        const fhenixRpcUrl = "https://api.nitrogen.fhenix.zone"; // Replace this with the actual Fhenix RPC URL
 
         // Ensure Web3 is loaded
         if (typeof window.ethereum !== 'undefined') {
@@ -15,7 +15,7 @@ fetch('../abi/contractABI.json')
         }
 
         // Contract address (replace with your deployed contract address)
-        const contractAddress = "0xA2395955B50bEA8709a1Be44198E4eFCb4a512B0"; 
+        const contractAddress = "0x22ebe3e856034e3a460869bbf7C1c06A6272e0c6"; 
 
         // Create the contract instance
         const contract = new web3.eth.Contract(contractABI, contractAddress);
